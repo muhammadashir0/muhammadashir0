@@ -1,0 +1,54 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Muhammad Ashir — Data Science and Responsible AI</title>
+  <desc id="desc">Premium dark banner with a luminous global network motif.</desc>
+  <defs>
+    <linearGradient id="bg" x1="56" y1="22" x2="1138" y2="346" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050816"/><stop offset="0.48" stop-color="#0A1025"/><stop offset="1" stop-color="#071A23"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="268" y1="92" x2="955" y2="304" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#63E6FF"/><stop offset="0.48" stop-color="#7C5CFC"/><stop offset="1" stop-color="#28E0A5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1013 175) rotate(180) scale(282 257)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24D9B0" stop-opacity=".22"/><stop offset="1" stop-color="#24D9B0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+    <clipPath id="globe"><circle cx="1015" cy="181" r="118"/></clipPath>
+    <pattern id="dots" width="13" height="13" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.35" fill="#70E9FF" fill-opacity=".7"/></pattern>
+  </defs>
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="23" stroke="url(#accent)" stroke-opacity=".34"/>
+  <circle cx="1022" cy="176" r="260" fill="url(#glow)"/>
+  <path d="M0 304C190 241 300 315 457 282C647 242 718 148 916 165C1051 176 1116 229 1200 215" stroke="url(#accent)" stroke-opacity=".11"/>
+  <path d="M0 327C210 267 307 341 469 306C647 267 728 191 916 191C1059 191 1122 245 1200 238" stroke="url(#accent)" stroke-opacity=".09"/>
+  <rect x="70" y="57" width="154" height="29" rx="14.5" fill="#63E6FF" fill-opacity=".08" stroke="#63E6FF" stroke-opacity=".25"/>
+  <circle cx="87" cy="71.5" r="4" fill="#28E0A5"/><circle cx="87" cy="71.5" r="8" stroke="#28E0A5" stroke-opacity=".22"/>
+  <text x="102" y="76" fill="#A9C9D7" font-size="12" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="600" letter-spacing="1.8">OPEN TO IMPACT</text>
+  <text x="68" y="145" fill="#F3F7FF" font-size="51" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="750" letter-spacing="-.9">Muhammad Ashir</text>
+  <rect x="69" y="163" width="505" height="3" rx="1.5" fill="url(#accent)"/>
+  <text x="69" y="207" fill="#B9C7D9" font-size="20" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="500" letter-spacing=".8">DATA SCIENCE  ·  MACHINE LEARNING  ·  RESPONSIBLE AI</text>
+  <text x="69" y="249" fill="#77889F" font-size="15" font-family="Inter,Segoe UI,Arial,sans-serif" letter-spacing=".25">Turning complex data into intelligent, explainable and globally useful systems.</text>
+  <g transform="translate(69 280)">
+    <rect width="139" height="34" rx="17" fill="#FFFFFF" fill-opacity=".045" stroke="#FFFFFF" stroke-opacity=".10"/>
+    <path d="M18 17c0-4 3.2-7.2 7.2-7.2s7.2 3.2 7.2 7.2-3.2 7.2-7.2 7.2S18 21 18 17Zm2.6-1h9.2M25.2 9.9c2.6 2.6 2.6 11.6 0 14.2M25.2 9.9c-2.6 2.6-2.6 11.6 0 14.2" stroke="#63E6FF" stroke-width="1.2"/>
+    <text x="42" y="21.5" fill="#BFD0E1" font-size="12" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="600">GERMANY · GLOBAL</text>
+  </g>
+  <g clip-path="url(#globe)">
+    <circle cx="1015" cy="181" r="118" fill="#071421" stroke="#63E6FF" stroke-opacity=".33"/>
+    <rect x="895" y="61" width="240" height="240" fill="url(#dots)" opacity=".42"/>
+    <ellipse cx="1015" cy="181" rx="58" ry="118" stroke="#63E6FF" stroke-opacity=".20"/>
+    <ellipse cx="1015" cy="181" rx="94" ry="118" stroke="#63E6FF" stroke-opacity=".12"/>
+    <path d="M897 181h236M908 132c68 25 146 25 214 0M908 230c68-25 146-25 214 0" stroke="#63E6FF" stroke-opacity=".17"/>
+    <!-- abstract continental network -->
+    <path d="M945 107l25-13 26 10 7 18 24 8 8 18-13 14-24-7-16 15-12-11-22-3-13-22 10-27Zm74 73 24-13 30 12 16 17-9 18-18 2-7 24-22 18-10-24-18-11 8-19-9-11 11-13Z" fill="#28E0A5" fill-opacity=".13" stroke="#68E8D0" stroke-opacity=".44"/>
+    <g fill="#C8FAFF">
+      <circle cx="970" cy="118" r="3"/><circle cx="1002" cy="138" r="2.5"/><circle cx="1037" cy="149" r="3"/><circle cx="1048" cy="190" r="2.5"/><circle cx="1080" cy="204" r="3"/><circle cx="1034" cy="230" r="2.5"/><circle cx="980" cy="168" r="2.5"/>
+    </g>
+    <g stroke="url(#accent)" stroke-opacity=".68">
+      <path d="M970 118l32 20 35 11 43 55-46 26-54-62 22-30"/><path d="M1037 149l11 41 32 14"/>
+    </g>
+  </g>
+  <ellipse cx="1015" cy="181" rx="145" ry="53" transform="rotate(-18 1015 181)" stroke="url(#accent)" stroke-opacity=".48"/>
+  <circle cx="1136" cy="139" r="4" fill="#63E6FF"/><circle cx="1136" cy="139" r="10" fill="#63E6FF" fill-opacity=".13"/>
+  <circle cx="900" cy="228" r="3" fill="#28E0A5"/><circle cx="900" cy="228" r="8" fill="#28E0A5" fill-opacity=".14"/>
+</svg>
