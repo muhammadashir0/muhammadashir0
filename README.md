@@ -64,7 +64,7 @@ An evidence-first financial-compliance copilot combining explainable transaction
 
 `Python` `LLM/RAG` `Explainable AI` `FinTech`
 
-**Status:** Working MVP · repository ready to publish
+**Status:** Published working MVP · [Explore the repository →](https://github.com/muhammadashir0/regledger-ai)
 
 </td>
 <td width="50%" valign="top">
