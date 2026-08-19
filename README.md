@@ -16,7 +16,7 @@
 
 ## The mission
 
-I turn raw data into **clear decisions, reliable models, and responsible AI systems**. My work sits at the intersection of data science, machine learning, deep learning, and AI governance—with a focus on solutions that are useful beyond the notebook.
+I turn raw data into **clear decisions, reliable models, and responsible AI systems**. My work sits at the intersection of data science, machine learning, deep learning, and AI governance with a focus on solutions that are useful beyond the notebook.
 
 ```text
 DISCOVER  →  clean, explore, and understand complex data
