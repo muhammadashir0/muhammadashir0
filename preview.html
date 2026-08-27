@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Ashir — Premium GitHub Profile Preview</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --accent: #39d353;
+      --text: #c9d1d9;
+      --muted: #8b949e;
+      --title: #f0f6fc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 32px 24px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.01em;
+    }
+    .badge-status {
+      background: rgba(57, 211, 83, 0.15);
+      border: 1px solid rgba(57, 211, 83, 0.4);
+      color: var(--accent);
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-family: ui-monospace, monospace;
+    }
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+    button, .btn {
+      background: #21262d;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 7px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+      text-decoration: none;
+    }
+    button:hover, .btn:hover {
+      background: #30363d;
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .btn-primary {
+      background: #238636;
+      border-color: #2ea043;
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: #2ea043;
+      border-color: #3fb950;
+      color: #fff;
+    }
+    .tab-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+    .tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--muted);
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .tab-btn.active {
+      background: #21262d;
+      border-color: var(--border);
+      color: var(--title);
+      font-weight: 600;
+    }
+    .section-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      border-bottom: 1px solid #21262d;
+      padding-bottom: 8px;
+      margin: 36px 0 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1;
+      min-width: 320px;
+    }
+    .card.light {
+      background: #ffffff;
+      color: #1f2328;
+    }
+    .tag {
+      font: 11px ui-monospace, Consolas, monospace;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .card.light .tag {
+      color: #57606a;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 20px;
+    }
+    .profile-render-box {
+      background: #0d1117;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    .terminal-box {
+      background: #090d13;
+      border: 1px solid #21262d;
+      border-radius: 8px;
+      padding: 16px;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 13px;
+      line-height: 1.6;
+      margin: 16px 0;
+    }
+    .terminal-cmd {
+      color: #58a6ff;
+      margin-bottom: 8px;
+    }
+    .terminal-text {
+      color: #c9d1d9;
+    }
+    .table-custom {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 13px;
+    }
+    .table-custom th, .table-custom td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+    .table-custom th {
+      background: #161b22;
+      color: var(--title);
+    }
+    .binary-footer {
+      font-family: ui-monospace, monospace;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-align: center;
+      padding: 24px 0 12px;
+      border-top: 1px solid var(--border);
+      margin-top: 36px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div>
+      <h1>Muhammad Ashir <span class="badge-status">muhammadashir0</span></h1>
+      <p style="margin: 4px 0 0; color: var(--muted); font-size: 14px;">
+        High-Performance Dot-Matrix &amp; SVG Dynamic Portfolio Architecture
+      </p>
+    </div>
+    <div class="actions">
+      <button id="replayBtn">⚡ Replay Dot Scan</button>
+      <a href="https://github.com/muhammadashir0" target="_blank" class="btn btn-primary">Open GitHub Profile ↗</a>
+    </div>
+  </header>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" id="tabFullProfile">Full GitHub Profile View</button>
+    <button class="tab-btn" id="tabAssetInspector">SVG Asset Inspector (Dark/Light)</button>
+  </div>
+
+  <!-- VIEW 1: FULL GITHUB PROFILE VIEW -->
+  <div id="viewFullProfile" class="profile-render-box">
+    <div align="center">
+      <!-- PORTRAIT -->
+      <img class="portrait-img" src="assets/portrait.svg" width="300" alt="Muhammad Ashir, rendered as a dot matrix" style="margin-bottom: 20px;">
+      
+      <!-- TYPING BANNER -->
+      <a href="https://github.com/muhammadashir0" target="_blank">
+        <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=39D353&center=true&vCenter=true&width=640&lines=Muhammad+Ashir;AI+Systems+Engineer;Financial+LLMs+%26+Agentic+AI;Secure+Autonomous+Payments;01100011+01101111+01100100+01100101" alt="typing banner">
+      </a>
+      
+      <!-- SOCIAL BADGES -->
+      <div style="margin: 16px 0; display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
+        <a href="https://de.linkedin.com/in/muhammadashir1" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+        <a href="mailto:ashirali0998@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+        <a href="https://datascienceportfol.io/ashirali0998" target="_blank"><img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
+        <a href="https://github.com/muhammadashir0" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+      </div>
+
+      <img src="https://komarev.com/ghpvc/?username=muhammadashir0&style=flat&color=39d353&label=profile+views" alt="profile views">
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid var(--border); margin: 30px 0;">
+
+    <h2 style="font-size: 18px; color: var(--title);"><code style="color: var(--accent);">~/</code> whoami</h2>
+
+    <div class="terminal-box">
+      <div class="terminal-cmd">$ cat about.txt</div>
+      <div class="terminal-text">
+        Hi, I'm <strong>Muhammad Ashir</strong>. I build resilient AI systems, agentic financial infrastructure, and deterministic evaluation engines that bridge the gap between machine intelligence and regulated banking rails.
+      </div>
+    </div>
+
+    <ul style="margin: 16px 0; padding-left: 20px; line-height: 1.8;">
+      <li>Currently building <strong><a href="https://github.com/muhammadashir0/mandatepay" style="color: var(--accent); text-decoration: none;">MandatePay</a></strong> and <strong><a href="https://github.com/muhammadashir0/regledger-ai" style="color: var(--accent); text-decoration: none;">RegLedger AI</a></strong></li>
+      <li>Portfolio: <strong><a href="https://datascienceportfol.io/ashirali0998" target="_blank" style="color: var(--accent); text-decoration: none;">datascienceportfol.io/ashirali0998</a></strong></li>
+      <li>Core research &amp; systems: <strong>Financial LLMs · Policy-as-Code · Agent Guardrails · RAG &amp; LLMOps</strong></li>
+      <li>Location: <strong>Germany (Frankfurt / Ilmenau)</strong></li>
+      <li>Operating philosophy: <em>"Autonomous agents shouldn't hold the company credit card without cryptographic guardrails."</em></li>
+    </ul>
+
+    <hr style="border: 0; border-top: 1px solid var(--border); margin: 30px 0;">
+
+    <div align="center">
+      <h2 style="font-size: 18px; color: var(--title);"><code style="color: var(--accent);">~/</code> toolbox</h2>
+      <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi,docker,postgres,mongodb,redis,git,github,bash,linux,vscode,postman,tailwind&perline=11" alt="tech stack">
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid var(--border); margin: 30px 0;">
+
+    <div align="center">
+      <h2 style="font-size: 18px; color: var(--title);"><code style="color: var(--accent);">~/</code> skill radar</h2>
+      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <img src="assets/radar-dark.svg" width="400" alt="skill radar chart">
+        <img src="assets/radar-langs-dark.svg" width="400" alt="language radar chart">
+      </div>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid var(--border); margin: 30px 0;">
+
+    <div align="center">
+      <h2 style="font-size: 18px; color: var(--title);"><code style="color: var(--accent);">~/</code> contribution calendar</h2>
+      <img src="assets/metrics.isocalendar.svg" width="90%" alt="3D isometric contribution calendar" style="margin-bottom: 20px;">
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid var(--border); margin: 30px 0;">
+
+    <div align="center">
+      <h2 style="font-size: 18px; color: var(--title);"><code style="color: var(--accent);">~/</code> the numbers</h2>
+      <img src="assets/card-stats-dark.svg" width="480" alt="GitHub statistics" style="margin-bottom: 16px;">
+      <img src="assets/metrics.languages.svg" height="165" alt="most used languages" style="margin-bottom: 16px;">
+      <img src="assets/metrics.achievements.svg" width="480" alt="achievements">
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid var(--border); margin: 30px 0;">
+
+    <div align="center">
+      <h2 style="font-size: 18px; color: var(--title);"><code style="color: var(--accent);">~/</code> selected work</h2>
+      <div class="grid-2" style="margin: 20px 0;">
+        <a href="https://github.com/muhammadashir0/mandatepay"><img src="assets/card-mandatepay-dark.svg" width="100%" alt="MandatePay"></a>
+        <a href="https://github.com/muhammadashir0/regledger-ai"><img src="assets/card-regledger-ai-dark.svg" width="100%" alt="RegLedger AI"></a>
+        <a href="https://github.com/muhammadashir0/fineval-arena"><img src="assets/card-fineval-arena-dark.svg" width="100%" alt="FinEval Arena"></a>
+        <a href="https://github.com/muhammadashir0/covenantgraph"><img src="assets/card-covenantgraph-dark.svg" width="100%" alt="CovenantGraph"></a>
+      </div>
+
+      <table class="table-custom">
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Focus</th>
+            <th>Stack</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong><a href="https://github.com/muhammadashir0/mandatepay" style="color: var(--accent); text-decoration: none;">MandatePay</a></strong></td>
+            <td>Agent Payments Authorization Firewall &amp; Control Plane</td>
+            <td><code>Python</code> <code>MCP</code> <code>HMAC</code> <code>Policy Engine</code></td>
+          </tr>
+          <tr>
+            <td><strong><a href="https://github.com/muhammadashir0/regledger-ai" style="color: var(--accent); text-decoration: none;">RegLedger AI</a></strong></td>
+            <td>Evidence-First AML Compliance Copilot &amp; Transaction Triage</td>
+            <td><code>Python</code> <code>RAG</code> <code>Audit Chain</code> <code>FastAPI</code></td>
+          </tr>
+          <tr>
+            <td><strong><a href="https://github.com/muhammadashir0/fineval-arena" style="color: var(--accent); text-decoration: none;">FinEval Arena</a></strong></td>
+            <td>Financial LLM Benchmark &amp; Agent Red-Teaming Harness</td>
+            <td><code>Python</code> <code>LLM Eval</code> <code>PyTorch</code> <code>JSON-Schema</code></td>
+          </tr>
+          <tr>
+            <td><strong><a href="https://github.com/muhammadashir0/covenantgraph" style="color: var(--accent); text-decoration: none;">CovenantGraph</a></strong></td>
+            <td>Temporal Debt Agreement Intelligence &amp; Breach Graph</td>
+            <td><code>Python</code> <code>Graph ML</code> <code>Document AI</code> <code>NetworkX</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="binary-footer">
+      01110100 01101000 01100001 01101110 01101011 01110011 00100000 01100110 01101111 01110010 00100000 01110011 01100011 01101110 01101111 01101100 01101100 01101001 01101110 01100111
+    </div>
+  </div>
+
+  <!-- VIEW 2: ASSET INSPECTOR -->
+  <div id="viewAssetInspector" style="display: none;">
+    <div class="section-title">
+      <span>1. Portrait Matrix (<code style="color: var(--accent)">assets/portrait.svg</code>)</span>
+      <button onclick="replayScan()">Replay scan animation</button>
+    </div>
+    <div class="row">
+      <div class="card">
+        <span class="tag">Dark Mode</span>
+        <img class="portrait-img" src="assets/portrait.svg" width="300" alt="Portrait Dark">
+      </div>
+      <div class="card light">
+        <span class="tag">Light Mode</span>
+        <img class="portrait-img" src="assets/portrait.svg" width="300" alt="Portrait Light">
+      </div>
+    </div>
+
+    <div class="section-title">
+      <span>2. Radar Charts (<code style="color: var(--accent)">assets/radar*.svg</code>)</span>
+    </div>
+    <div class="row">
+      <div class="card">
+        <span class="tag">radar-dark.svg (Competencies)</span>
+        <img src="assets/radar-dark.svg" width="400" alt="Radar Dark">
+      </div>
+      <div class="card light">
+        <span class="tag">radar-light.svg (Competencies)</span>
+        <img src="assets/radar-light.svg" width="400" alt="Radar Light">
+      </div>
+    </div>
+    <div class="row">
+      <div class="card">
+        <span class="tag">radar-langs-dark.svg (Stack &amp; Languages)</span>
+        <img src="assets/radar-langs-dark.svg" width="400" alt="Radar Langs Dark">
+      </div>
+      <div class="card light">
+        <span class="tag">radar-langs-light.svg (Stack &amp; Languages)</span>
+        <img src="assets/radar-langs-light.svg" width="400" alt="Radar Langs Light">
+      </div>
+    </div>
+
+    <div class="section-title">
+      <span>3. Statistics &amp; Repository Cards (<code style="color: var(--accent)">assets/card-*.svg</code>)</span>
+    </div>
+    <div class="row">
+      <div class="card">
+        <span class="tag">card-stats-dark.svg</span>
+        <img src="assets/card-stats-dark.svg" width="460" alt="Stats Dark">
+      </div>
+      <div class="card light">
+        <span class="tag">card-stats-light.svg</span>
+        <img src="assets/card-stats-light.svg" width="460" alt="Stats Light">
+      </div>
+    </div>
+    <div class="row">
+      <div class="card">
+        <span class="tag">card-mandatepay-dark.svg</span>
+        <img src="assets/card-mandatepay-dark.svg" width="400" alt="MandatePay Dark">
+      </div>
+      <div class="card">
+        <span class="tag">card-regledger-ai-dark.svg</span>
+        <img src="assets/card-regledger-ai-dark.svg" width="400" alt="RegLedger AI Dark">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function replayScan() {
+    document.querySelectorAll('.portrait-img').forEach(img => {
+      const src = img.src.split('?')[0];
+      img.src = src + '?t=' + Date.now();
+    });
+  }
+
+  document.getElementById('replayBtn').addEventListener('click', replayScan);
+
+  const tabFullProfile = document.getElementById('tabFullProfile');
+  const tabAssetInspector = document.getElementById('tabAssetInspector');
+  const viewFullProfile = document.getElementById('viewFullProfile');
+  const viewAssetInspector = document.getElementById('viewAssetInspector');
+
+  tabFullProfile.addEventListener('click', () => {
+    tabFullProfile.classList.add('active');
+    tabAssetInspector.classList.remove('active');
+    viewFullProfile.style.display = 'block';
+    viewAssetInspector.style.display = 'none';
+  });
+
+  tabAssetInspector.addEventListener('click', () => {
+    tabAssetInspector.classList.add('active');
+    tabFullProfile.classList.remove('active');
+    viewFullProfile.style.display = 'none';
+    viewAssetInspector.style.display = 'block';
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "title": "Language & Stack Mix",
+  "_comment": "Language and runtime distribution across repositories. Falls back to this profile if repo language count is low.",
+  "axes": [
+    { "label": "Python",       "value": 95 },
+    { "label": "SQL",          "value": 84 },
+    { "label": "Jupyter",      "value": 80 },
+    { "label": "Bash / Linux", "value": 78 },
+    { "label": "TypeScript",   "value": 70 },
+    { "label": "Docker / OCI", "value": 76 },
+    { "label": "C++ / Rust",   "value": 65 }
+  ]
+}

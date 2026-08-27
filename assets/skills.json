@@ -1,0 +1,13 @@
+{
+  "title": "Skill Radar",
+  "_comment": "Self-rated core engineering competencies (0-100). Redrawn by .github/workflows/radar.yml.",
+  "axes": [
+    { "label": "AI & Agent Systems", "value": 92 },
+    { "label": "Financial ML & AML", "value": 86 },
+    { "label": "Policy-as-Code",     "value": 88 },
+    { "label": "LLM Evals & RAG",    "value": 85 },
+    { "label": "Python & PyTorch",   "value": 90 },
+    { "label": "FastAPI & APIs",     "value": 82 },
+    { "label": "Audit & Security",   "value": 85 }
+  ]
+}

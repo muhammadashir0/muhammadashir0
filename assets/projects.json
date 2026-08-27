@@ -1,0 +1,25 @@
+{
+  "_comment": "Featured flagship repositories in profile display order. Stars, forks and languages are updated live on every run of .github/workflows/radar.yml.",
+  "projects": [
+    {
+      "repo": "mandatepay",
+      "description": "Authorization firewall for agentic payments. Signed human mandates, policy-as-code, human approval thresholds and verifiable audit journal.",
+      "language": "Python"
+    },
+    {
+      "repo": "regledger-ai",
+      "description": "Evidence-first AML compliance copilot combining explainable transaction-risk triage, policy-grounded RAG, and tamper-evident audit trails.",
+      "language": "Python"
+    },
+    {
+      "repo": "fineval-arena",
+      "description": "Deterministic evaluation harness and red-teaming benchmark for financial LLMs and tool-calling agents across banking regulatory policies.",
+      "language": "Python"
+    },
+    {
+      "repo": "covenantgraph",
+      "description": "Temporal credit agreement intelligence turning unstructured debt contracts into verifiable covenant graphs and early breach monitors.",
+      "language": "Python"
+    }
+  ]
+}
