@@ -339,6 +339,16 @@ def main(argv=None):
             dest.write_text(render_repo(card, theme), encoding="utf-8")
         print(f"wrote card-{card['name']}-*.svg  ({card['stars']}star {card['forks']}fork {card['language']})")
 
+    # Also refresh the animated Proof Loop SVG scenes & pulse dividers if present
+    scenes_script = Path(__file__).with_name("animated_scenes.py")
+    dividers_script = Path(__file__).with_name("animated_dividers.py")
+    if scenes_script.exists():
+        import subprocess
+        subprocess.run([sys.executable, str(scenes_script), "--github", args.user, "--out", str(args.out)], check=False)
+    if dividers_script.exists():
+        import subprocess
+        subprocess.run([sys.executable, str(dividers_script)], check=False)
+
 
 if __name__ == "__main__":
     main()
