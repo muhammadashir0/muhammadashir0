@@ -3,23 +3,23 @@
   "projects": [
     {
       "repo": "mandatepay",
-      "description": "Authorization firewall for agentic payments. Signed human mandates, policy-as-code, human approval thresholds and verifiable audit journal.",
+      "description": "Authorization firewall for agentic payments: signed human mandates, policy-as-code, approval thresholds, and verifiable audit journal.",
       "language": "Python"
     },
     {
       "repo": "regledger-ai",
-      "description": "Evidence-first AML compliance copilot combining explainable transaction-risk triage, policy-grounded RAG, and tamper-evident audit trails.",
+      "description": "Evidence-first FinTech compliance copilot combining explainable risk triage, policy-grounded RAG, and tamper-evident audit trails.",
       "language": "Python"
     },
     {
-      "repo": "fineval-arena",
-      "description": "Deterministic evaluation harness and red-teaming benchmark for financial LLMs and tool-calling agents across banking regulatory policies.",
+      "repo": "europulse-fraud-guard",
+      "description": "PSD3/PSR1 fraud defense engine combining Graph Attention Networks (GAT) and behavioral biometrics for clear-box APP fraud detection.",
       "language": "Python"
     },
     {
-      "repo": "covenantgraph",
-      "description": "Temporal credit agreement intelligence turning unstructured debt contracts into verifiable covenant graphs and early breach monitors.",
-      "language": "Python"
+      "repo": "Portfolio",
+      "description": "Interactive multi-agent technical portfolio featuring live MandatePay architecture tours, verified certifications, and system demos.",
+      "language": "JavaScript"
     }
   ]
 }

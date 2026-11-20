@@ -1,0 +1,108 @@
+{
+  "_comment": "Content for the animated Proof Loop SVG scenes. Edit this file, then run: python scripts/animated_scenes.py --github muhammadashir0 --out assets",
+  "identity": {
+    "name": "Muhammad Ashir",
+    "handle": "muhammadashir0",
+    "role": "AI Systems Engineer",
+    "base": "Ilmenau, DE",
+    "since": "Nov 2025",
+    "focus": "Payments · AML · Fraud ML"
+  },
+  "systems": [
+    {
+      "name": "Europulse Fraud Guard",
+      "repo": "europulse-fraud-guard",
+      "stage": "01 · INFER",
+      "color": "#58a6ff",
+      "desc": ["GAT graph neural nets + biometrics", "for PSD3 real-time fraud scoring."],
+      "stack": "PYTORCH · GAT · FASTAPI",
+      "icon": "graph"
+    },
+    {
+      "name": "MandatePay",
+      "repo": "mandatepay",
+      "stage": "02 · GUARD",
+      "color": "#39d353",
+      "desc": ["Signed mandates + policy-as-code", "firewall for agentic payments."],
+      "stack": "PYTHON · MCP · HMAC",
+      "icon": "shield"
+    },
+    {
+      "name": "RegLedger AI",
+      "repo": "regledger-ai",
+      "stage": "03 · ATTEST",
+      "color": "#2fd48a",
+      "desc": ["Grounded RAG evidence, XAI risk,", "and hash-chained audit trails."],
+      "stack": "PYTHON · RAG · AUDIT CHAIN",
+      "icon": "ledger"
+    },
+    {
+      "name": "Portfolio",
+      "repo": "Portfolio",
+      "stage": "04 · SHOWCASE",
+      "color": "#7ee787",
+      "desc": ["Interactive MandatePay explorer", "and verified AI systems hub."],
+      "stack": "REACT · VITE · LIVE DEMOS",
+      "icon": "target"
+    }
+  ],
+  "toolGroups": [
+    {
+      "title": "INTELLIGENCE",
+      "subtitle": "models & XAI",
+      "items": ["Python", "PyTorch", "TensorFlow", "Pandas", "RAG", "NumPy"]
+    },
+    {
+      "title": "SERVICES & DATA",
+      "subtitle": "APIs & storage",
+      "items": ["FastAPI", "PostgreSQL", "MongoDB", "Redis", "JSON Schema", "SQL"]
+    },
+    {
+      "title": "PLATFORM",
+      "subtitle": "ship & isolate",
+      "items": ["Docker", "Linux", "Bash", "Git", "GitHub", "HMAC"]
+    },
+    {
+      "title": "WORKFLOW",
+      "subtitle": "build & inspect",
+      "items": ["VS Code", "Postman", "Tailwind", "NetworkX", "MCP", "Jupyter"]
+    }
+  ],
+  "metrics": {
+    "publicRepos": 12,
+    "stars": 12,
+    "contributions": 391,
+    "streak": 14,
+    "flagshipSystems": 4,
+    "focusDomains": 7
+  },
+  "skills": [
+    {"label": "AI & Agent Systems", "value": 92},
+    {"label": "Policy-as-Code", "value": 88},
+    {"label": "Financial ML & Fraud", "value": 87},
+    {"label": "Grounded RAG & XAI", "value": 85}
+  ],
+  "links": [
+    {"label": "GITHUB", "value": "@muhammadashir0", "glyph": "gh"},
+    {"label": "EMAIL", "value": "ashirali0998@gmail.com", "glyph": "at"},
+    {"label": "LINKEDIN", "value": "in/muhammadashir1", "glyph": "in"},
+    {"label": "PORTFOLIO", "value": "datascienceportfol.io", "glyph": "globe"}
+  ],
+  "quotes": [
+    [
+      "Autonomous agents shouldn't",
+      "hold the company credit card",
+      "without cryptographic guardrails."
+    ],
+    [
+      "If it can't be replayed, audited",
+      "or explained, it isn't",
+      "production-grade intelligence."
+    ],
+    [
+      "Build systems that fail loudly,",
+      "log precisely, and recover",
+      "quietly."
+    ]
+  ]
+}
